@@ -1,3 +1,13 @@
+#test if the first argument is here
+    if [[ -z $1 ]]; then
+        echo "#################################################################################"
+        echo "you must give as argument the folder name in cvs  : contrib_migration folder_name"
+        echo "#################################################################################"
+        exit
+    fi
+
+
+
 if  [[ ! -d ~/git_work/$1 ]]; then
 
     rm -rf $1/contribs8
